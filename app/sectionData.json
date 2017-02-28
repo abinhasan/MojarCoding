@@ -1,0 +1,38 @@
+[{
+    "SectionId": "1",
+    "SectionName": "Angular Js",
+    "Pic": "angularjs.png",
+    "AboutSection": "Learn basics to advanced AngularJS. Start from directives, controller, scope, events, services, filters, modules etc."
+  }, {
+    "SectionId": "2",
+    "SectionName": "Elastic Search",
+    "Pic": "elastic.png",
+    "AboutSection": "Elasticsearch is a real-time distributed and open source full-text search and analytics engine. It is used in Single Page Application (SPA) projects."
+  },
+
+  {
+    "SectionId": "3",
+    "SectionName": "Javascript",
+    "Pic": "Javascript.png",
+    "AboutSection": "Learn JavaScript from scratch. Learn about JavaScript variables, datatypes, operators, function, object etc."
+  },
+
+  {
+    "SectionId": "4",
+    "SectionName": "Linq",
+    "Pic": "linq.png",
+    "AboutSection": "Learn about LINQ query syntax, method syntax, lambda expression, Standard Query Operators, expression, expression tree etc."
+  },
+
+  {
+    "SectionId": "5",
+    "SectionName": "Web Api",
+    "Pic": "api.png",
+    "AboutSection": "Learn basics to advanced AngularJS. Start from directives, controller, scope, events, services, filters, modules etc."
+  }, {
+    "SectionId": "6",
+    "SectionName": "Database",
+    "Pic": "Database.png",
+    "AboutSection": "Learn basics to advanced AngularJS. Start from directives, controller, scope, events, services, filters, modules etc."
+  }
+]

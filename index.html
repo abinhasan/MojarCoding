@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="TechnologyModule">
+<head>
+
+    <title>Mojar Coding</title>
+    <base href="/" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="assets/css/main.css" rel="stylesheet" />
+
+    
+</head>
+<body id="myPage">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" ui-sref="home">Logo</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <!-- <form class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                </form> -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a ui-sref="home">HOME</a></li>
+                    <li><a ui-sref="allpost">ALL ARTICLES</a></li>
+                    <li><a ui-sref="contact">CONTACT</a></li>
+                    <li><a href="https://github.com/abinhasan" target="_blank" title="GitHub"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div ui-view></div>
+   
+    <footer class="container-fluid text-center">
+        <!-- <a href="#myPage" title="To Top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a> -->
+        <p>LEARN WEB TECHNOLOGIES</p>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular-sanitize.min.js'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/textAngular/1.1.2/textAngular.min.js'></script>
+    
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.11.0.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="app/app.module.js"></script>
+    <script src="app/app.routes.js"></script>
+
+    <script src="app/components/home/homeController.js"></script>
+    <script src="app/components/home/homeService.js"></script>
+
+    <script src="app/components/section/sectionController.js"></script>
+    <script src="app/components/section/sectionService.js"></script>
+
+    <script src="app/components/details/detailsController.js"></script>
+    <script src="app/components/details/detailsService.js"></script>
+
+    <script src="app/components/allpost/allpostController.js"></script>
+    <script src="app/components/allpost/allpostService.js"></script>
+
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-92339902-1', 'auto');
+    ga('send', 'pageview');
+</script>
+
+</body>
+</html>

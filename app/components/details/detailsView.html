@@ -1,0 +1,61 @@
+﻿
+<br />
+<br />
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-8">
+            <h5 style="font-weight:600;font-size:24px;border-bottom:3px solid #bdbdbd;padding-bottom: 10px;">{{DetailsPost.sectionName}} Article</h5>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="feature-post">{{DetailsPost.title}}</h2>
+                    <div style="margin-bottom:12px">
+                        <span style="margin-right:10px">
+                            By
+                            <span class="glyphicon glyphicon-user"></span>
+                            admin
+                        </span>
+
+                        <span style="margin-right:10px">
+                            <span><i class="fa fa-clock-o fa-lg" aria-hidden="true"></i></span>
+                            {{DetailsPost.updateTime | date : "MMM d, y"}}
+                        </span>
+
+                        <span>
+                            <span class="glyphicon glyphicon-folder-open"></span>
+                            {{DetailsPost.sectionName}}
+                        </span>
+                    </div>
+                    <div class="div-details">
+                        <div ta-bind="text" ng-model="DetailsPost.description" ta-readonly='disabled'></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 col-sm-offset-1">
+            <div>
+                <h5 style="font-weight:600;font-size:24px;border-bottom:3px solid #bdbdbd;padding-bottom: 10px;">Follow</h5>
+                <div style="margin-top:20px;">
+                    <span class="facebook"><i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i></span>
+                    <span class="twitter"><i class="fa fa-twitter-square fa-4x" aria-hidden="true"></i></span>
+                    <span class="google-plus"><i class="fa fa-google-plus-square fa-4x" aria-hidden="true"></i></span>
+                    <span><i class="fa fa-github-square fa-4x" aria-hidden="true"></i></span>
+                </div>
+            </div>
+
+            <div style="margin-top:50px;">
+                <h5 style="font-weight:600;font-size:24px;border-bottom:3px solid #bdbdbd;padding-bottom: 10px;">Subscribe</h5>
+                <div style="border: 1px solid #000; margin-top:20px">
+                    <p style="font-size: 15px;color: #000;line-height: 27px;padding: 5px 10px 5px;text-align: center;width: 80%;margin: 5px auto 20px;border-bottom: 2px solid #ebebeb;border-radius: 20px;">
+                        Get All The Latest Updates Delivered Straight Into Your Inbox For Free!
+                    </p>
+                    <div>
+                        <input type="text" class="mail-textbox" name="email" placeholder="Enter your email address...">
+                        <button type="button" class="btn btn-success btn-mail">Join Now</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
