@@ -9,12 +9,12 @@
 <div class="container-fluid text-center">
     <div class="row">   
         <div class="col-sm-4" ng-repeat="s in Sections" style="padding-bottom:60px;">
-            <span><img width="80" src="assets/img/ico/{{s.Pic}}" /></span>
-            <h4>{{s.SectionName}}</h4>
+            <span><img width="80" src="http://mojarcoding.com/assets/img/section/{{s.image}}" /></span>
+            <h4>{{s.name}}</h4>
             <div class="text-position">
-                <p>{{s.AboutSection}}</p>
+                <p>{{s.description}}</p>
             </div>
-            <a ui-sref="section({sectionTitle: spaceEncode(s.SectionName | lowercase), sId:s.SectionId})" class="btn btn-success btn-flat">Start Reading</a>
+            <a ui-sref="section({sectionTitle: spaceEncode(s.name | lowercase), sId:s.sectionId})" class="btn btn-success btn-flat">Start Reading</a>
         </div>
     </div>
 </div>

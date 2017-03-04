@@ -11,7 +11,7 @@
         };
 
         var sections = function() {
-            return $http.get('app/sectionData.json')
+            return $http.get(serviceBase + "/api/section/GetAllSectionsByLimit/" + 10)
                 .then(function(serviceResp) {
                     return serviceResp.data;
                 });
